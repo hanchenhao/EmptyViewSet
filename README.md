@@ -40,7 +40,7 @@
 ## 说明
 本库的封装的自动模式是基于dataSource的array数组为空时才回展示，更确切的说是UITableviewCell的个数为零。加载数据为空时需要触发reloadData方法来呈现空白页占位图。如果有其他需求,可以用普通模式手动设置,这次暂时只做了UITableview的处理,后续会把UICollectionView补上.
 
-![](https://github.com/hanchenhao/test.git)
+![](https://github.com/hanchenhao/EmptyViewSet/blob/master/empty.gif)
 
 ## 联系方式
 
