@@ -43,8 +43,7 @@
 ![](https://github.com/hanchenhao/EmptyViewSet/blob/master/empty.gif)
 
 ## 联系方式
-
-hanchenhao, hanchenhao@vip.qq.com
+ hanchenhao@vip.qq.com
 
 
 
