@@ -42,8 +42,12 @@
 
 ![](https://github.com/hanchenhao/EmptyViewSet/blob/master/empty.gif)
 
+## 许可
+EmptyViewSet 使用 MIT 许可证，详情见 LICENSE 文件。
+
+
 ## 联系方式
- hanchenhao@vip.qq.com
+邮箱:hanchenhao@vip.qq.com
 
 
 
