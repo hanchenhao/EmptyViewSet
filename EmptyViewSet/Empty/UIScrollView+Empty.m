@@ -89,6 +89,25 @@ static char emptyViewKey;
 
         conuts == 0 ? [self showEnptyView] : [self hidenEmptyView];
     }
+    
+    else if ([self isKindOfClass:[UICollectionView class]]) {
+        UICollectionView *collectionView = (UICollectionView *)self;
+        id <UICollectionViewDataSource> dataSource = collectionView.dataSource;
+        
+        NSInteger sections = 1;
+        if (dataSource && [dataSource respondsToSelector:@selector(numberOfSectionsInCollectionView:)]) {
+            sections = [dataSource numberOfSectionsInCollectionView:collectionView];
+        }
+        
+        NSInteger conuts = 0;
+        if (dataSource && [dataSource respondsToSelector:@selector(collectionView: numberOfItemsInSection:)]) {
+            for (NSInteger section = 0; section < sections; section++) {
+                conuts += [dataSource collectionView:collectionView numberOfItemsInSection:section];
+            }
+        }
+        
+        conuts == 0 ? [self showEnptyView] : [self hidenEmptyView];
+    }
 }
 - (void) showEnptyView {
     [self addSubview:self.emptyView];

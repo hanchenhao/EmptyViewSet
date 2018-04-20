@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0297B3320897D72003DBE0D /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0297B3220897D72003DBE0D /* CollectionViewController.m */; };
 		F0397ABB1E5E736800780BA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0397ABA1E5E736800780BA5 /* main.m */; };
 		F0397ABE1E5E736800780BA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0397ABD1E5E736800780BA5 /* AppDelegate.m */; };
 		F0397AC11E5E736800780BA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0397AC01E5E736800780BA5 /* ViewController.m */; };
@@ -60,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F0297B3120897D72003DBE0D /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		F0297B3220897D72003DBE0D /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		F0397AB61E5E736800780BA5 /* EmptyViewSet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmptyViewSet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0397ABA1E5E736800780BA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0397ABC1E5E736800780BA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				F0397AB81E5E736800780BA5 /* EmptyViewSet */,
-				F0397AD21E5E736800780BA5 /* EmptyViewSetTests */,
 				F0397ADD1E5E736800780BA5 /* EmptyViewSetUITests */,
 				F0397AB71E5E736800780BA5 /* Products */,
 			);
@@ -181,6 +183,8 @@
 				F0397ABD1E5E736800780BA5 /* AppDelegate.m */,
 				F0397ABF1E5E736800780BA5 /* ViewController.h */,
 				F0397AC01E5E736800780BA5 /* ViewController.m */,
+				F0297B3120897D72003DBE0D /* CollectionViewController.h */,
+				F0297B3220897D72003DBE0D /* CollectionViewController.m */,
 				F0397AF51E5E746C00780BA5 /* NormalViewController.h */,
 				F0397AF61E5E746C00780BA5 /* NormalViewController.m */,
 				F0397AF81E5E747600780BA5 /* AutoViewController.h */,
@@ -189,6 +193,7 @@
 				F0397AC51E5E736800780BA5 /* Assets.xcassets */,
 				F0397AC71E5E736800780BA5 /* LaunchScreen.storyboard */,
 				F0397ACA1E5E736800780BA5 /* Info.plist */,
+				F0397AD21E5E736800780BA5 /* EmptyViewSetTests */,
 				F0397AB91E5E736800780BA5 /* Supporting Files */,
 			);
 			path = EmptyViewSet;
@@ -479,6 +484,7 @@
 				F0397B3C1E5E748700780BA5 /* UIScrollView+MJRefresh.m in Sources */,
 				F0397AFA1E5E747600780BA5 /* AutoViewController.m in Sources */,
 				F0397B351E5E748700780BA5 /* MJRefreshGifHeader.m in Sources */,
+				F0297B3320897D72003DBE0D /* CollectionViewController.m in Sources */,
 				F0397ABB1E5E736800780BA5 /* main.m in Sources */,
 				F0397B2E1E5E748700780BA5 /* MJRefreshHeader.m in Sources */,
 				F0397AF41E5E745F00780BA5 /* UIScrollView+Empty.m in Sources */,
@@ -719,6 +725,7 @@
 				F0397AE51E5E736800780BA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0397AE61E5E736800780BA5 /* Build configuration list for PBXNativeTarget "EmptyViewSetTests" */ = {
 			isa = XCConfigurationList;
@@ -727,6 +734,7 @@
 				F0397AE81E5E736800780BA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0397AE91E5E736800780BA5 /* Build configuration list for PBXNativeTarget "EmptyViewSetUITests" */ = {
 			isa = XCConfigurationList;
@@ -735,6 +743,7 @@
 				F0397AEB1E5E736800780BA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
