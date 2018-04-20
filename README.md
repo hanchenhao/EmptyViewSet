@@ -35,8 +35,32 @@
 
 ```
 
+ColltionView的使用方式和Tableview一致
+
+```objc
+//自动模式,会自动读取ColltionView的元数据,没有内容时会自动加载对应界面
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
+    [self.collectionView checkTableViewSectionCount];
+
+    return  cell;
+}
+
+```
+
+```objc
+//手动模式,根据具体的使用场景去加载和隐藏对应界面
+
+//	显示视图
+[self.collectionView showEnptyView]
+//	隐藏视图
+[self.collectionView hidenEmptyView] 
+
+```
+
 ## 说明
-本库的封装的自动模式是基于dataSource的array数组为空时才回展示，更确切的说是UITableviewCell的个数为零。加载数据为空时需要触发reloadData方法来呈现空白页占位图。如果有其他需求,可以用普通模式手动设置,这次暂时只做了UITableview的处理,后续会把UICollectionView补上.
+本库的封装的自动模式是基于dataSource的array数组为空时才回展示，更确切的说是Cell的个数为零。加载数据为空时需要触发reloadData方法来呈现空白页占位图。如果有其他需求,可以用普通模式手动设置.写这个库的时候参考了一些其他比较受欢迎的开源代码,他们更多的是为我们提供了一类标准样式而非自己定制,本库的UI用xib来绘制,这样能更大程度上的满足自己定制的需求.
 
 ![](https://github.com/hanchenhao/EmptyViewSet/blob/master/empty.gif)
 
